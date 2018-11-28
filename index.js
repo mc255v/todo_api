@@ -4,7 +4,7 @@ var express = require('express'),
 
 var todoRoutes = require('./routes/todos');
 
-app.use(bodyParser.jscon());
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', function(req,res) {
